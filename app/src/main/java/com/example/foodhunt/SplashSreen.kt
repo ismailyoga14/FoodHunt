@@ -20,8 +20,8 @@ class SplashSreen : AppCompatActivity() {
         mediaPlayer.start()
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, Signup::class.java)
-            startActivity(intent)
+            //val intent = Intent(this, Signup::class.java)
+            startActivity(Intent(this, OnboardingActivity::class.java))
             finish() // supaya tidak bisa kembali ke splash
         }, splashTime)
     }

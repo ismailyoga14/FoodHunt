@@ -12,11 +12,12 @@
         android:id="@+id/tvTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Create Account 🚀"
+        android:text="Welcome Back 👋"
+        android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="26sp"
         android:textStyle="bold"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -26,7 +27,7 @@
         android:id="@+id/tvSubtitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Sign up to get started"
+        android:text="Sign in to continue"
         android:textColor="#BBBBBB"
         android:textSize="14sp"
         android:layout_marginTop="8dp"
@@ -34,9 +35,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- NAME -->
+    <!-- EMAIL -->
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputNameLayout"
+        android:id="@+id/inputEmailLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -51,35 +52,12 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Full Name"
-            android:textColor="@android:color/white"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <!-- EMAIL -->
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputEmailLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:boxBackgroundMode="filled"
-        app:boxBackgroundColor="#1E1E1E"
-        app:boxCornerRadiusTopStart="16dp"
-        app:boxCornerRadiusTopEnd="16dp"
-        app:boxCornerRadiusBottomStart="16dp"
-        app:boxCornerRadiusBottomEnd="16dp"
-        app:layout_constraintTop_toBottomOf="@id/inputNameLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
-        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            android:textColorHint="#AAAAAA"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- PASSWORD -->
@@ -104,60 +82,48 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            android:textColorHint="#AAAAAA"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- CONFIRM PASSWORD -->
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputConfirmPasswordLayout"
-        android:layout_width="0dp"
+    <!-- FORGOT PASSWORD -->
+    <TextView
+        android:id="@+id/tvForgot"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:endIconMode="password_toggle"
-        app:boxBackgroundMode="filled"
-        app:boxBackgroundColor="#1E1E1E"
-        app:boxCornerRadiusTopStart="16dp"
-        app:boxCornerRadiusTopEnd="16dp"
-        app:boxCornerRadiusBottomStart="16dp"
-        app:boxCornerRadiusBottomEnd="16dp"
+        android:text="Forgot Password?"
+        android:textColor="#6C63FF"
+        android:textSize="13sp"
+        android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@id/inputPasswordLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etConfirmPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Confirm Password"
-            android:textColor="@android:color/white"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <!-- BUTTON SIGN UP -->
+    <!-- BUTTON SIGN IN -->
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnSignUp"
+        android:id="@+id/btnSignIn"
         android:layout_width="0dp"
         android:layout_height="56dp"
-        android:text="Create Account"
+        android:text="Sign In"
         android:textAllCaps="false"
         android:textSize="16sp"
         android:layout_marginTop="24dp"
         android:backgroundTint="#6C63FF"
         android:textColor="@android:color/white"
         app:cornerRadius="28dp"
-        app:layout_constraintTop_toBottomOf="@id/inputConfirmPasswordLayout"
+        app:layout_constraintTop_toBottomOf="@id/tvForgot"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- SIGN IN -->
+    <!-- SIGN UP -->
     <TextView
-        android:id="@+id/tvSignIn"
+        android:id="@+id/tvSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Already have an account? Sign In"
+        android:text="Don't have an account? Sign Up"
         android:textColor="#BBBBBB"
         android:textSize="13sp"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/btnSignUp"
+        app:layout_constraintTop_toBottomOf="@id/btnSignIn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 

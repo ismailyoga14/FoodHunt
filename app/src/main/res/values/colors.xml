@@ -5,4 +5,8 @@
     <color name="abu">#CCCCCCCC</color>
     <color name="orenn">#FF9200</color>
     <color name="oren">#F4511E</color>
+    <color name="orange">#FF7A00</color>
+    <color name="purple">#7B2CBF</color>
+    <color name="pink_mid">#FF3D8D</color>
+    <color name="gray_light">#EEEEEE</color>
 </resources>

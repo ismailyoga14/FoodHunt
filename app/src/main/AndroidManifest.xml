@@ -18,9 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".Signup">
+        <activity android:name=".OnboardingActivity">
         </activity>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".SignupActivity">
+        </activity>
+        <activity android:name=".SigninActivity">
+        </activity>
+        <activity android:name=".MainActivity">
+        </activity>
     </application>
 
 </manifest>

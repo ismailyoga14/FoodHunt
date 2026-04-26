@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:radius="12dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 📸 FOTO -->
+        <ImageView
+            android:id="@+id/imgTempat"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/food"/>
+
+        <!-- 📝 INFO -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvNama"
+                android:text="Nama Tempat"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                tools:ignore="Suspicious0dp" />
+
+            <TextView
+                android:id="@+id/tvRating"
+                android:text="⭐ 4.5 • 1 km"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/black"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                tools:ignore="Suspicious0dp"/>
+
+            <TextView
+                android:id="@+id/tvAlamat"
+                android:text="Jl. Contoh No. 123"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/black"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                tools:ignore="Suspicious0dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
